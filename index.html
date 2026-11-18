@@ -291,7 +291,6 @@ h2{font-size:clamp(28px,3.6vw,40px);line-height:1.1;font-weight:800;letter-spaci
 .snum{width:34px;height:34px;border-radius:50%;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;font-weight:800}
 .code{position:relative;margin-top:16px;background:var(--inset);border:1px solid var(--line);border-radius:16px;padding:16px 16px 16px 18px;min-width:0}
 .code pre{font:13px/1.7 var(--mono);white-space:pre-wrap;word-break:break-all;color:var(--tx)}
-.copy{margin-top:12px;height:36px;padding:0 16px;border-radius:999px;border:1px solid var(--line2);background:var(--card);color:var(--tx);font:600 14px/1 var(--font);cursor:pointer}
 code{font-family:var(--mono);font-size:.92em;background:var(--inset);border:1px solid var(--line);border-radius:7px;padding:1px 6px;white-space:nowrap}
 .ask-cc{margin-top:14px;padding:14px 16px;border-radius:14px;background:var(--accent-soft);color:var(--tx);font-size:14.5px;line-height:1.5}
 .ask-cc b{color:var(--accent)}
@@ -441,9 +440,9 @@ footer p+p{margin-top:8px}
   </div>
 </section>
 
-<section class="sec tight" id="how" aria-labelledby="how">
+<section class="sec tight" id="how" aria-labelledby="how-h">
   <div class="wrap">
-    <div class="head"><h2 id="how">Как это работает: пять шагов до плана, которому можно верить</h2></div>
+    <div class="head"><h2 id="how-h">Как это работает: пять шагов до плана, которому можно верить</h2></div>
     <p class="note-l">У каждого шага&nbsp;— пример того, что ты увидишь. Цифры в примерах условные.</p>
     <div class="flow">
 
@@ -601,7 +600,7 @@ footer p+p{margin-top:8px}
     <div class="trust">
       <div class="tr"><div class="chk"><svg class="i" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div><div><h3>Что делать, решает таблица, а не настроение модели.</h3><span class="who-tag">Таблица, которую ты прочитал</span><p>Модель делает две узкие вещи: понимает сообщение клиента и пишет текст вокруг готовых фактов. Цены, даты и обещания вставляет программа&nbsp;— дословно, из твоих данных.</p><div class="rc"><span class="d ok">✓</span><span>Цена в ответе: <b>из прайса, слово в слово</b></span></div></div></div>
       <div class="tr"><div class="chk"><svg class="i" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div><div><h3>Цифры&nbsp;— только из данных.</h3><span class="who-tag">Считает скрипт, а не ИИ</span><p>Сколько клиентов, сколько дошли, где обрываются&nbsp;— считается по переписке. Каждый вывод помечен: сверено или догадка.</p><div class="rc"><span class="d no">✕</span><span>В настоящем проекте догадка «97 % броней вносят руками» <b>не подтвердилась</b> и в план не вошла</span></div></div></div>
-      <div class="tr"><div class="chk"><svg class="i" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div><div><h3>Независимая проверка вслепую.</h3><span class="who-tag">Второй ИИ, не видевший разбора</span><p>Он ищет поломки сам и запечатывает находки до сравнения с первым разбором&nbsp;— задним числом их не поправить.</p><div class="rc"><span class="d ok">+</span><span>В настоящем проекте: <b>21 новая поломка</b> и один пункт первого разбора опровергнут</span></div></div></div>
+      <div class="tr"><div class="chk"><svg class="i" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div><div><h3>Независимая проверка вслепую.</h3><span class="who-tag">Второй ИИ, не видевший разбора</span><p>Он ищет поломки сам и запечатывает находки до сравнения с первым разбором. Поправить их потом можно только с твоего слова, и это будет видно.</p><div class="rc"><span class="d ok">+</span><span>В настоящем проекте: <b>21 новая поломка</b> и один пункт первого разбора опровергнут</span></div></div></div>
       <div class="tr"><div class="chk"><svg class="i" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div><div><h3>К коду не пускает скрипт, а не обещание ИИ.</h3><span class="who-tag">Проверяет скрипт</span><p>Пока ты не одобрил план, скрипт не пускает к коду ни автопилот, ни разработчика. Изменилось хоть что-то в прочитанном&nbsp;— снова тебе на чтение.</p><div class="rc"><span class="d no">✕</span><span>К коду нельзя: <b>план правили после твоего «да»</b></span></div></div></div>
       <div class="tr"><div class="chk"><svg class="i" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div><div><h3>Имена клиентов не попадут в план.</h3><span class="who-tag">Имена убираются при первом чтении</span><p>Выгрузка лежит в папке проекта и не попадает в git. Читают её помощники Claude — как любой файл, который ты даёшь Claude Code. Имена, телефоны, компании и реквизиты заменяются при первом же разборе: в плане&nbsp;— «Клиент-17», «Компания-3».</p><div class="rc"><span class="d ok">✓</span><span>В карте и плане: <b>ни одного настоящего имени</b></span></div></div></div>
       <div class="tr"><div class="chk"><svg class="i" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div><div><h3>Деньги и обещания решаешь ты.</h3><span class="who-tag">Решаешь ты</span><p>Скидка, отсрочка, возврат, кто отвечает на вопросы бота и в какой срок&nbsp;— логикой не решаются. У каждого такого вопроса есть вариант по умолчанию, и ты видишь, что на нём стоит.</p><div class="rc"><span class="d no">?</span><span>Отсрочка постоянным до 14 дней? <b>Решаешь ты</b></span></div></div></div>
@@ -651,7 +650,7 @@ footer p+p{margin-top:8px}
       <div class="arr" aria-hidden="true"><svg class="i" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
       <div class="pb you"><div class="m-t">Ты</div><h3>Читаешь и говоришь «да»</h3><p>Пока «да» нет, к коду не пустят. Поменял что-то в плане&nbsp;— снова на чтение.</p></div>
       <div class="arr" aria-hidden="true"><svg class="i" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
-      <div class="pb"><div class="m-t">autopilot-ls</div><h3>Строит по плану</h3><ul><li>задачи&nbsp;— по видам ошибок, а не по случаям</li><li>проверяет каждый шаг сборки</li><li>не сдаёт бота без проверки «в тени»</li></ul></div>
+      <div class="pb"><div class="m-t">autopilot-ls</div><h3>Строит по плану</h3><ul><li>задачи&nbsp;— по видам ошибок, а не по случаям</li><li>проверяет каждый шаг сборки</li><li>не сдаёт бота без проверки «в тени»</li><li>нужна версия 2.2.3-ls.7 или новее</li></ul></div>
     </div>
     <div class="pair-foot">
       <span>Можно отдать план и любому разработчику: в нём всё, чтобы собрать без пересказа.</span>
@@ -683,7 +682,7 @@ footer p+p{margin-top:8px}
     <div class="faq">
       <details><summary>Нужно ли уметь программировать?</summary><p>Нет. Ты показываешь работу, отвечаешь на вопросы словами дела&nbsp;— «постоянный клиент», «счёт», «бронь»&nbsp;— и читаешь план. Код пишет сборщик: автопилот или разработчик. Твоё время&nbsp;— рассказ о работе, ответы на вопросы и чтение плана.</p></details>
       <details><summary>Сколько переписки нужно? А если её нет?</summary><p>Лучше год-три работы сотрудника с клиентами: в ней видно редкое. Отбирает скилл сам&nbsp;— по заказам и оплатам, а не по словам: настоящая сделка бывает в шесть сообщений без единого «рабочего» слова.</p><p>Нет переписки&nbsp;— работа всё равно идёт, по рассказу и живым делам. Но в плане будет честно написано: «редкие случаи перепиской не проверены».</p></details>
-      <details><summary>Что с приватностью клиентов?</summary><p>Выгрузка лежит в папке проекта и не попадает в git. Читает её Claude&nbsp;— так же, как любой файл, который ты открываешь в Claude Code; сам скилл никуда её не отправляет. Имена, телефоны, компании и реквизиты заменяются при первом же разборе: в карте, плане и отчётах настоящих имён нет. Давать ли переписку, решаешь ты&nbsp;— скилл спросит прямо.</p></details>
+      <details><summary>Что с приватностью клиентов?</summary><p>Выгрузка лежит в папке проекта и не попадает в git. Читает её Claude&nbsp;— так же, как любой файл, который ты открываешь в Claude Code. Номера чатов скрипт заменяет условными ещё при загрузке, а имена, телефоны, компании и реквизиты заменяются при первом же разборе: в карте, плане и отчётах нет ни настоящих имён, ни номеров. Давать ли переписку, решаешь ты&nbsp;— скилл спросит прямо.</p></details>
       <details><summary>Только Телеграм?</summary><p>Нет&nbsp;— любая переписка, которую можно выгрузить в файл: другой мессенджер, CRM, почта, база старого бота. Для выгрузки Телеграма всё готово, другой формат Claude Code переведёт в простой список сообщений.</p></details>
       <details><summary>Сколько это стоит?</summary><p>Скилл закрытый: доступ — по заявке, условия обсуждаем лично. Кроме этого тратится лимит твоей подписки Claude. Чтение двух лет переписки&nbsp;— порядка одного-трёх миллионов токенов. Бюджет называешь ты: если переписки больше, скилл сначала покажет число и спросит.</p></details>
       <details><summary>Подойдёт ли для моей должности?</summary><p>Если в ней есть клиент, повторяющееся дело и много исключений вокруг него&nbsp;— да: запись, бронь, заявки, продажи, поддержка, документы. Для разового скрипта или продукта без повторяющегося дела скилл не нужен.</p></details>
@@ -715,15 +714,5 @@ footer p+p{margin-top:8px}
   </div>
 </footer>
 
-<script>
-document.querySelectorAll('[data-copy]').forEach(function (b) {
-  b.hidden = false;
-  b.addEventListener('click', function () {
-    var text = document.getElementById(b.dataset.copy).innerText;
-    var done = function () { b.textContent = 'Скопировано'; setTimeout(function () { b.textContent = 'Скопировать'; }, 1600); };
-    if (navigator.clipboard) { navigator.clipboard.writeText(text).then(done, function () {}); }
-  });
-});
-</script>
 </body>
 </html>
